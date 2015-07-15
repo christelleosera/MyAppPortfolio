@@ -7,102 +7,79 @@
     android:background="#ECEFF1">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SPOTIFY STREAMER"
+        android:text="@string/spotify_streamer"
         android:id="@+id/spotify_button"
         android:layout_above="@+id/scores_button"
         android:layout_alignLeft="@+id/scores_button"
         android:layout_alignStart="@+id/scores_button"
         android:layout_alignRight="@+id/scores_button"
         android:layout_alignEnd="@+id/scores_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        style="@style/buttonStyle"
+        android:onClick="showToastSpotify"
+       />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SCORES APP"
+        android:text="@string/scores_app"
         android:id="@+id/scores_button"
         android:layout_above="@+id/library_button"
         android:layout_alignLeft="@+id/library_button"
         android:layout_alignStart="@+id/library_button"
         android:layout_alignRight="@+id/library_button"
         android:layout_alignEnd="@+id/library_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        style="@style/buttonStyle"
+        android:onClick="showToastScores"
+        />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LIBRARY APP"
+        android:text="@string/library_app"
         android:id="@+id/library_button"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/build_button"
         android:layout_alignStart="@+id/build_button"
         android:layout_alignRight="@+id/build_button"
         android:layout_alignEnd="@+id/build_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        style="@style/buttonStyle"
+        android:onClick="showToastLibrary"
+        />
 
     <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/build_it"
         android:id="@+id/build_button"
         android:layout_below="@+id/library_button"
         android:layout_alignLeft="@+id/xyz_button"
         android:layout_alignStart="@+id/xyz_button"
         android:layout_alignRight="@+id/xyz_button"
         android:layout_alignEnd="@+id/xyz_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        style="@style/buttonStyle"
+        android:onClick="showToastBuild"
+        />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="XYZ READER"
+        android:text="@string/xyz_reader"
         android:id="@+id/xyz_button"
         android:layout_below="@+id/build_button"
         android:layout_alignLeft="@+id/capstone_button"
         android:layout_alignStart="@+id/capstone_button"
         android:layout_alignRight="@+id/capstone_button"
         android:layout_alignEnd="@+id/capstone_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        style="@style/buttonStyle"
+        android:onClick="showToastXyz"
+        />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CAPSTONE: MY OWN APP"
+        android:text="@string/capstone"
         android:id="@+id/capstone_button"
-        android:background="#37474F"
-        android:textColor="#FFF"
         android:layout_below="@+id/xyz_button"
         android:layout_centerHorizontal="true"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp" />
+        style="@style/buttonStyle"
+        android:onClick="showToastCapstone"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Nanodegree Apps"
+        android:text="@string/nanodegree_apps"
         android:id="@+id/textView"
         android:textColor="#37474F"
         android:textAlignment="center"
